@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+.active {
+    font-weight: 600;
+}
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -7,5 +11,18 @@
 
     main {
         flex-grow: 1;
+        .card {
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+            h5 {
+                font-size: 17px;
+            }
+            p {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
     }
 }
