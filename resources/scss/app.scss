@@ -3,6 +3,9 @@
 .active {
     font-weight: 600;
 }
+a {
+    text-decoration: none;
+}
 
 .wrapper {
     min-height: 100vh;
@@ -22,6 +25,15 @@
             p {
                 font-size: 12px;
                 margin: 0;
+            }
+        }
+        .show-container {
+            h5,
+            h6 {
+                font-weight: bold;
+            }
+            p {
+                font-weight: 500;
             }
         }
     }
