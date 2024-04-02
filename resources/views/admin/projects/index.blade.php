@@ -1,8 +1,14 @@
 @extends('layouts.app')
+@section('title', '| Projects')
 
 @section('content')
   <div class="container py-3">
-    <h1 class="fs-2 fw-bold py-4">Projects</h1>
+    <div class="d-flex justify-content-between py-4">
+        <h1 class="fw-bold fs-2">Projects</h1>
+        <a href="{{ route('admin.projects.create') }}">
+            <button class="btn btn-success">Add Project</button>
+        </a>
+    </div>
     <div class="row g-3">
         @foreach ($projects as $project)
         <div class="col-3">
